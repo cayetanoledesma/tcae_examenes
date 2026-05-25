@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TCAE OPE 2026</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🩺 TCAE OPE 2026</h1>
+
+<div class="case-box">
+
+<h2>🫁 SUPUESTO PRÁCTICO</h2>
+
+<p>
+
+F.M.D., de 80 años, viudo y con dos hijos que viven fuera de la ciudad.
+
+Jubilado, antiguo profesor de primaria.
+
+Diagnosticado de carcinoma de pulmón, bronquitis crónica,
+HTA y exfumador.
+
+Actualmente en tratamiento con oxigenoterapia domiciliaria.
+
+Dependiente para actividades básicas como aseo y vestido.
+
+En las últimas semanas presenta empeoramiento funcional
+y realiza vida cama-sillón.
+
+Usa absorbentes día y noche aunque solicita ir al WC.
+
+</p>
+
+</div>
+
+<div class="exam-selector">
+
+<button onclick="loadExam('A')">📘 EXAMEN A</button>
+
+<button onclick="loadExam('B')">📘 EXAMEN B</button>
+
+<button onclick="loadExam('C')">📘 EXAMEN C</button>
+
+</div>
+
+<div class="top-info">
+
+<div>
+⏱ Tiempo:
+<span id="timer">60:00</span>
+</div>
+
+<div>
+📋 Respondidas:
+<span id="answered">0</span>/50
+</div>
+
+<div>
+✅ Correctas:
+<span id="correct">0</span>
+</div>
+
+<div>
+❌ Incorrectas:
+<span id="wrong">0</span>
+</div>
+
+</div>
+
+<button id="darkModeBtn">
+🌙 Modo Oscuro
+</button>
+
+<div id="quiz"></div>
+
+<div class="controls">
+
+<button onclick="finishExam()">
+✅ Finalizar
+</button>
+
+<button onclick="restartExam()">
+🔄 Reiniciar
+</button>
+
+</div>
+
+<div id="result"></div>
+
+</div>
+
+<script src="examenA.js"></script>
+<script src="examenB.js"></script>
+<script src="examenC.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
