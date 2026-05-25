@@ -1,54 +1,553 @@
 const examA = [
 
-{question:"¿Cuál es la posición más adecuada para un paciente con disnea?",options:["Trendelenburg","Fowler","Prono","Supino"],answer:1},
-{question:"La oxigenoterapia domiciliaria requiere:",options:["Evitar fuentes calor","Fumar cerca","Llamas abiertas","Alcohol cerca"],answer:0},
-{question:"La bronquitis crónica pertenece a:",options:["EPOC","Digestivo","Renal","Neurológico"],answer:0},
-{question:"Una medida preventiva de UPP es:",options:["Cambios posturales","Humedad","Fricción","Inmovilidad"],answer:0},
-{question:"La posición Fowler favorece:",options:["Respiración","Edema","Rigidez","Hipotensión"],answer:0},
-{question:"La cianosis indica:",options:["Falta oxígeno","Fiebre","HTA","Deshidratación"],answer:0},
-{question:"La higiene de manos previene:",options:["Infecciones","HTA","Hipoxia","Ansiedad"],answer:0},
-{question:"La movilización previene:",options:["UPP","Otitis","Miopía","Cefalea"],answer:0},
-{question:"Una función del TCAE es:",options:["Apoyo higiene","Diagnosticar","Prescribir","Operar"],answer:0},
-{question:"La disnea es:",options:["Dificultad respiratoria","Fiebre","Edema","Hipotensión"],answer:0},
-{question:"La HTA significa:",options:["Hipertensión arterial","Hipotensión arterial","Hipoxia arterial","Hipertermia"],answer:0},
-{question:"La principal complicación del encamamiento es:",options:["UPP","Miopía","Otitis","Caries"],answer:0},
-{question:"La piel del paciente encamado debe mantenerse:",options:["Limpia y seca","Húmeda","Sin vigilancia","Friccionada"],answer:0},
-{question:"Una ABVD es:",options:["Higiene","Viajar","Leer","Internet"],answer:0},
-{question:"La inmovilidad favorece:",options:["Atrofia muscular","Mayor fuerza","Resistencia","Flexibilidad"],answer:0},
-{question:"La observación continua permite:",options:["Detectar cambios","Diagnosticar","Operar","Prescribir"],answer:0},
-{question:"El oxígeno es:",options:["Comburente","Sedante","Antiséptico","Inflamable"],answer:0},
-{question:"La mejor prevención infecciones es:",options:["Lavado manos","Oscuridad","Inmovilidad","Aislamiento"],answer:0},
-{question:"La autonomía debe fomentarse:",options:["Según capacidades","Con sobreprotección","Anulando decisiones","Sin participación"],answer:0},
-{question:"La seguridad del paciente busca:",options:["Reducir riesgos","Aumentar errores","Evitar registros","Limitar cuidados"],answer:0},
-{question:"La tos persistente puede relacionarse con:",options:["Carcinoma pulmón","Miopía","Otitis","Dermatitis"],answer:0},
-{question:"El paciente con oxigenoterapia puede presentar:",options:["Sequedad mucosas","Miopía","Otitis","Glaucoma"],answer:0},
-{question:"La principal prioridad es:",options:["Respiración","Lectura","Televisión","Visitas"],answer:0},
-{question:"La ergonomía protege:",options:["Espalda trabajador","Vista","Oído","Piel"],answer:0},
-{question:"Una complicación inmovilidad es:",options:["Estreñimiento","Miopía","Otitis","Hipermetropía"],answer:0},
-{question:"La movilización debe realizarse:",options:["Protegiendo ergonomía","Con tirones","Rápido","Sin ayuda"],answer:0},
-{question:"La intimidad implica:",options:["Preservar privacidad","Ridiculizar","Hablar delante otros","Ignorar preferencias"],answer:0},
-{question:"La comunicación debe ser:",options:["Respetuosa","Autoritaria","Despectiva","Infantil"],answer:0},
-{question:"La hidratación cutánea previene:",options:["Lesiones piel","Hipoxia","HTA","Bronquitis"],answer:0},
-{question:"La vida cama-sillón favorece:",options:["Rigidez articular","Movilidad","Autonomía","Ejercicio"],answer:0},
-{question:"La principal vía transmisión infecciones es:",options:["Manos","Calzado","Luz","Ropa"],answer:0},
-{question:"La oxigenoterapia debe administrarse:",options:["Según prescripción","Libremente","Sin control","Solo noche"],answer:0},
-{question:"La movilización adecuada previene:",options:["Trombosis","Otitis","Miopía","Caries"],answer:0},
-{question:"El paciente dependiente en ABVD necesita:",options:["Ayuda","Alta","Autonomía total","Independencia"],answer:0},
-{question:"El exfumador tiene más riesgo de:",options:["EPOC","Miopía","Otitis","Dermatitis"],answer:0},
-{question:"La higiene diaria busca:",options:["Bienestar prevención","Dependencia","Aislamiento","Inmovilidad"],answer:0},
-{question:"Una complicación respiratoria grave es:",options:["Insuficiencia respiratoria","Miopía","Otitis","Cefalea"],answer:0},
-{question:"La seguridad ambiental incluye:",options:["Evitar obstáculos","Suelo mojado","Pasillos oscuros","Cables"],answer:0},
-{question:"La posición menos adecuada en disnea es:",options:["Supino","Fowler","Sedestación","SemiFowler"],answer:0},
-{question:"La atención centrada en la persona implica:",options:["Individualizar cuidados","Estandarizar","Infantilizar","Ignorar preferencias"],answer:0},
-{question:"La función respiratoria mejora con:",options:["Fowler","Trendelenburg","Supino","Prono mantenido"],answer:0},
-{question:"El TCAE debe comunicar:",options:["Cambios relevantes","Diagnósticos","Prescripciones","Altas"],answer:0},
-{question:"El uso correcto absorbentes evita:",options:["Lesiones humedad","Hipoxia","Bronquitis","HTA"],answer:0},
-{question:"La escucha activa consiste en:",options:["Comprender atender","Interrumpir","Juzgar","Ignorar"],answer:0},
-{question:"La valoración piel incluye:",options:["Enrojecimiento","Color pelo","Vista","Tamaño pie"],answer:0},
-{question:"La bronquitis crónica produce frecuentemente:",options:["Tos expectoración","Diplopía","Otalgia","Cefalea"],answer:0},
-{question:"La HTA aumenta riesgo de:",options:["Eventos cardiovasculares","Miopía","Otitis","Dermatitis"],answer:0},
-{question:"La principal función cuidados básicos es:",options:["Bienestar","Cirugía","Diagnóstico","Tratamiento médico"],answer:0},
-{question:"La higiene oral en oxigenoterapia es importante por:",options:["Sequedad","Hipotensión","Miopía","Otitis"],answer:0},
-{question:"El paciente solicita WC. El TCAE debe:",options:["Favorecer autonomía segura","Ignorar","Negarse","Inmovilizar"],answer:0},
-{question:"La mejor actuación ante disnea súbita es:",options:["Avisar observar","Ignorar","Tumbar plano","Quitar oxígeno"],answer:0}
+{
+question:"¿Cuál es la posición más adecuada para un paciente con disnea?",
+options:[
+"Trendelenburg",
+"Supino",
+"Fowler",
+"Prono"
+],
+answer:2
+},
+
+{
+question:"La oxigenoterapia domiciliaria requiere:",
+options:[
+"Usar tabaco",
+"Evitar fuentes de calor",
+"Tapar salidas",
+"Usar llamas abiertas"
+],
+answer:1
+},
+
+{
+question:"La bronquitis crónica pertenece a:",
+options:[
+"Digestivo",
+"Renal",
+"EPOC",
+"Neurológico"
+],
+answer:2
+},
+
+{
+question:"La principal complicación del encamamiento es:",
+options:[
+"Otitis",
+"Miopía",
+"UPP",
+"Caries"
+],
+answer:2
+},
+
+{
+question:"La posición Fowler favorece:",
+options:[
+"Edema",
+"Rigidez",
+"Hipotensión",
+"Respiración"
+],
+answer:3
+},
+
+{
+question:"La cianosis indica:",
+options:[
+"Fiebre",
+"HTA",
+"Falta de oxígeno",
+"Deshidratación"
+],
+answer:2
+},
+
+{
+question:"La higiene de manos previene:",
+options:[
+"Ansiedad",
+"Infecciones",
+"Hipoxia",
+"HTA"
+],
+answer:1
+},
+
+{
+question:"La movilización previene:",
+options:[
+"UPP",
+"Otitis",
+"Cefalea",
+"Miopía"
+],
+answer:0
+},
+
+{
+question:"Una función del TCAE es:",
+options:[
+"Diagnosticar",
+"Prescribir",
+"Operar",
+"Apoyo en higiene"
+],
+answer:3
+},
+
+{
+question:"La disnea es:",
+options:[
+"Fiebre",
+"Edema",
+"Hipotensión",
+"Dificultad respiratoria"
+],
+answer:3
+},
+
+{
+question:"La HTA significa:",
+options:[
+"Hipotensión arterial",
+"Hipoxia arterial",
+"Hipertensión arterial",
+"Hipertermia"
+],
+answer:2
+},
+
+{
+question:"La piel del paciente encamado debe mantenerse:",
+options:[
+"Húmeda",
+"Limpia y seca",
+"Sin vigilancia",
+"Friccionada"
+],
+answer:1
+},
+
+{
+question:"Una ABVD es:",
+options:[
+"Viajar",
+"Higiene",
+"Internet",
+"Leer"
+],
+answer:1
+},
+
+{
+question:"La inmovilidad favorece:",
+options:[
+"Mayor fuerza",
+"Resistencia",
+"Atrofia muscular",
+"Flexibilidad"
+],
+answer:2
+},
+
+{
+question:"La observación continua permite:",
+options:[
+"Prescribir",
+"Detectar cambios",
+"Operar",
+"Diagnosticar"
+],
+answer:1
+},
+
+{
+question:"El oxígeno es:",
+options:[
+"Sedante",
+"Comburente",
+"Inflamable",
+"Antiséptico"
+],
+answer:1
+},
+
+{
+question:"La mejor prevención infecciones es:",
+options:[
+"Lavado manos",
+"Oscuridad",
+"Inmovilidad",
+"Aislamiento"
+],
+answer:0
+},
+
+{
+question:"La autonomía debe fomentarse:",
+options:[
+"Con sobreprotección",
+"Según capacidades",
+"Anulando decisiones",
+"Sin participación"
+],
+answer:1
+},
+
+{
+question:"La seguridad del paciente busca:",
+options:[
+"Aumentar errores",
+"Reducir riesgos",
+"Evitar registros",
+"Limitar cuidados"
+],
+answer:1
+},
+
+{
+question:"La tos persistente puede relacionarse con:",
+options:[
+"Miopía",
+"Carcinoma pulmón",
+"Otitis",
+"Dermatitis"
+],
+answer:1
+},
+
+{
+question:"El paciente con oxigenoterapia puede presentar:",
+options:[
+"Glaucoma",
+"Miopía",
+"Sequedad mucosas",
+"Otitis"
+],
+answer:2
+},
+
+{
+question:"La principal prioridad es:",
+options:[
+"Lectura",
+"Respiración",
+"Televisión",
+"Visitas"
+],
+answer:1
+},
+
+{
+question:"La ergonomía protege:",
+options:[
+"Vista",
+"Oído",
+"Piel",
+"Espalda trabajador"
+],
+answer:3
+},
+
+{
+question:"Una complicación inmovilidad es:",
+options:[
+"Miopía",
+"Estreñimiento",
+"Otitis",
+"Hipermetropía"
+],
+answer:1
+},
+
+{
+question:"La movilización debe realizarse:",
+options:[
+"Rápido",
+"Protegiendo ergonomía",
+"Con tirones",
+"Sin ayuda"
+],
+answer:1
+},
+
+{
+question:"La intimidad implica:",
+options:[
+"Ridiculizar",
+"Hablar delante otros",
+"Preservar privacidad",
+"Ignorar preferencias"
+],
+answer:2
+},
+
+{
+question:"La comunicación debe ser:",
+options:[
+"Autoritaria",
+"Respetuosa",
+"Despectiva",
+"Infantil"
+],
+answer:1
+},
+
+{
+question:"La hidratación cutánea previene:",
+options:[
+"Hipoxia",
+"Bronquitis",
+"HTA",
+"Lesiones piel"
+],
+answer:3
+},
+
+{
+question:"La vida cama-sillón favorece:",
+options:[
+"Movilidad",
+"Rigidez articular",
+"Autonomía",
+"Ejercicio"
+],
+answer:1
+},
+
+{
+question:"La principal vía transmisión infecciones es:",
+options:[
+"Ropa",
+"Luz",
+"Manos",
+"Calzado"
+],
+answer:2
+},
+
+{
+question:"La oxigenoterapia debe administrarse:",
+options:[
+"Libremente",
+"Según prescripción",
+"Sin control",
+"Solo noche"
+],
+answer:1
+},
+
+{
+question:"La movilización adecuada previene:",
+options:[
+"Otitis",
+"Miopía",
+"Caries",
+"Trombosis"
+],
+answer:3
+},
+
+{
+question:"El paciente dependiente en ABVD necesita:",
+options:[
+"Autonomía total",
+"Alta",
+"Ayuda",
+"Independencia"
+],
+answer:2
+},
+
+{
+question:"El exfumador tiene más riesgo de:",
+options:[
+"Otitis",
+"EPOC",
+"Miopía",
+"Dermatitis"
+],
+answer:1
+},
+
+{
+question:"La higiene diaria busca:",
+options:[
+"Aislamiento",
+"Dependencia",
+"Inmovilidad",
+"Bienestar prevención"
+],
+answer:3
+},
+
+{
+question:"Una complicación respiratoria grave es:",
+options:[
+"Miopía",
+"Insuficiencia respiratoria",
+"Otitis",
+"Cefalea"
+],
+answer:1
+},
+
+{
+question:"La seguridad ambiental incluye:",
+options:[
+"Pasillos oscuros",
+"Evitar obstáculos",
+"Cables",
+"Suelo mojado"
+],
+answer:1
+},
+
+{
+question:"La posición menos adecuada en disnea es:",
+options:[
+"Supino",
+"Fowler",
+"Sedestación",
+"SemiFowler"
+],
+answer:0
+},
+
+{
+question:"La atención centrada en la persona implica:",
+options:[
+"Estandarizar",
+"Individualizar cuidados",
+"Infantilizar",
+"Ignorar preferencias"
+],
+answer:1
+},
+
+{
+question:"La función respiratoria mejora con:",
+options:[
+"Trendelenburg",
+"Supino",
+"Prono mantenido",
+"Fowler"
+],
+answer:3
+},
+
+{
+question:"El TCAE debe comunicar:",
+options:[
+"Diagnósticos",
+"Prescripciones",
+"Cambios relevantes",
+"Altas"
+],
+answer:2
+},
+
+{
+question:"El uso correcto absorbentes evita:",
+options:[
+"Hipoxia",
+"Bronquitis",
+"Lesiones humedad",
+"HTA"
+],
+answer:2
+},
+
+{
+question:"La escucha activa consiste en:",
+options:[
+"Interrumpir",
+"Comprender atender",
+"Juzgar",
+"Ignorar"
+],
+answer:1
+},
+
+{
+question:"La valoración piel incluye:",
+options:[
+"Vista",
+"Tamaño pie",
+"Enrojecimiento",
+"Color pelo"
+],
+answer:2
+},
+
+{
+question:"La bronquitis crónica produce frecuentemente:",
+options:[
+"Diplopía",
+"Otalgia",
+"Cefalea",
+"Tos expectoración"
+],
+answer:3
+},
+
+{
+question:"La HTA aumenta riesgo de:",
+options:[
+"Eventos cardiovasculares",
+"Miopía",
+"Otitis",
+"Dermatitis"
+],
+answer:0
+},
+
+{
+question:"La principal función cuidados básicos es:",
+options:[
+"Tratamiento médico",
+"Bienestar",
+"Cirugía",
+"Diagnóstico"
+],
+answer:1
+},
+
+{
+question:"La higiene oral en oxigenoterapia es importante por:",
+options:[
+"Miopía",
+"Otitis",
+"Sequedad",
+"Hipotensión"
+],
+answer:2
+},
+
+{
+question:"El paciente solicita WC. El TCAE debe:",
+options:[
+"Ignorar",
+"Negarse",
+"Favorecer autonomía segura",
+"Inmovilizar"
+],
+answer:2
+},
+
+{
+question:"La mejor actuación ante disnea súbita es:",
+options:[
+"Tumbar plano",
+"Avisar observar",
+"Ignorar",
+"Quitar oxígeno"
+],
+answer:1
+}
+
 ];
